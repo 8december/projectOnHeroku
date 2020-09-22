@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> some thing </h1>
+       <form action="/gen_irn" type="POST">
+
+        <h2>
+            TranDtls{}<br>
+        </h2>
+        TaxSch : <input type="text" name="TaxSch" /><br />
+        SupTyp: <input type="text" name="SupTyp" /><br />
+        RegRev: <input type="text" name="RegRev" /><br />
+        EcmGstin: <input type="text" name="EcmGstin" /><br />
+        IgstOnIntra: <input type="text" name="SupTyp" /><br />
+        
+        <h2>
+            DocDtls{}<br>
+        </h2>
+        Typ: <input type="text" name="Typ" /><br />
+        No: <input type="text" name="No" /><br />
+        Dt: <input type="text" name="Dt" /><br />
+        
+        <h2>
+            SellerDtls{}<br>
+        </h2>
+        Gstin: <input type="text" name="Gstin" /><br />
+        LglNm: <input type="text" name="LglNm" /><br />
+        TrdNm: <input type="text" name="TrdNm" /><br />
+        Addr1: <input type="text" name="Addr1" /><br />
+        Addr2: <input type="text" name="Addr2" /><br />
+        Loc: <input type="text" name="Loc" /><br />
+        Pin: <input type="text" name="Pin" /><br />
+        Ph: <input type="text" name="Ph" /><br />
+        Em: <input type="text" name="Em" /><br />
+        
+        <h2>
+            BuyerDtls{}<br>
+        </h2>
+        Gstin: <input type="text" name="Gstin_b" /><br />
+        LglNm: <input type="text" name="LglNm_b" /><br />
+        TrdNm: <input type="text" name="TrdNm_b" /><br />
+        Pos: <input type="text" name="Pos_b" /><br />
+        Addr1: <input type="text" name="Addr1_b" /><br />
+        Addr2: <input type="text" name="Addr2_b" /><br />
+        Loc: <input type="text" name="Loc_b" /><br />
+        Pin: <input type="text" name="Pin_b" /><br />
+        Stcd: <input type="text" name="Stcd_b" /><br />
+        Ph: <input type="text" name="Ph_b" /><br />
+        Em: <input type="text" name="Em_b" /><br />
+        
+        <h2>
+            DispDtls{}<br>
+        </h2>
+        Nm: <input type="text" name="Nm_dd" /><br />
+        Addr1: <input type="text" name="Addr1_dd" /><br />
+        Addr2: <input type="text" name="Addr2_dd" /><br />
+        Loc: <input type="text" name="Loc_dd" /><br />
+        Pin: <input type="text" name="Pin_dd" /><br />
+        Stcd: <input type="text" name="Stcd_dd" /><br />
+        
+        <h2>
+            ShipDtls{}<br>
+        </h2>
+        Gstin: <input type="text" name="Gstin_sd" /><br />
+        LglNm: <input type="text" name="LglNmn_sd" /><br />
+        TrdNm: <input type="text" name="TrdNmn_sd" /><br />
+        Addr1: <input type="text" name="Addr1_sd" /><br />
+        Addr2: <input type="text" name="Addr2_sd" /><br />
+        Loc: <input type="text" name="Loc_sd" /><br />
+        Pin: <input type="text" name="Pin_sd" /><br />
+        Stcd: <input type="text" name="Stcd_sd" /><br />
+        
+        <h2>
+            ItemList{}<br>
+        </h2>
+        SlNo: <input type="text" name="SlNo_i" /><br />
+        PrdDesc: <input type="text" name="PrdDesc_i" /><br />
+        IsServc: <input type="text" name="IsServc_i" /><br />
+        HsnCd: <input type="text" name="HsnCd_i" /><br />
+        Barcde: <input type="text" name="Barcde_i" /><br />
+        Qty: <input type="text" name="Qty_i" /><br />
+        FreeQty: <input type="text" name="FreeQty_i" /><br />
+        Unit: <input type="text" name="Unit_i" /><br />
+        UnitPrice: <input type="text" name="UnitPricet_i" /><br />
+        TotAmt: <input type="text" name="TotAmtt_i" /><br />
+        Discount: <input type="text" name="Discountt_i" /><br />
+        PreTaxVal: <input type="text" name="PreTaxValt_i" /><br />
+        AssAmt: <input type="text" name="AssAmt_i" /><br />
+        GstRt: <input type="text" name="GstRt_i" /><br />
+        IgstAmt: <input type="text" name="IgstAmt_i" /><br />
+        CgstAmt: <input type="text" name="CgstAmt_i" /><br />
+        SgstAmt: <input type="text" name="SgstAmt_i" /><br />
+        CesRt: <input type="text" name="CesRt_i" /><br />
+        CesAmt: <input type="text" name="CesAmt_i" /><br />
+        CesNonAdvlAmt: <input type="text" name="CesNonAdvlAmt_i" /><br />
+        StateCesRt: <input type="text" name="StateCesRt_i" /><br />
+        StateCesAmt: <input type="text" name="StateCesAmt_i" /><br />
+        StateCesNonAdvlAmt: <input type="text" name="StateCesNonAdvlAmt_i" /><br />
+        OthChrg: <input type="text" name="OthChrg_i" /><br />
+        TotItemVal: <input type="text" name="TotItemVal_i" /><br />
+        OrdLineRef: <input type="text" name="OrdLineRef_i" /><br />
+        OrgCntry: <input type="text" name="OrgCntry_i" /><br />
+        PrdSlNo: <input type="text" name="PrdSlNo_i" /><br />
+       
+        <h3>"BchDtls": </h3><br>
+        Nm: <input type="text" name="Nm_i" /><br />
+        ExpDt: <input type="text" name="ExpDt_i" /><br />
+        WrDt: <input type="text" name="WrDt_i" /><br />
+        
+        <h3>AttribDtls: </h3><br>
+        Nm: <input type="text" name="Nm_at" /><br />
+        Val: <input type="text" name="Val_at" /><br />
+        
+        <h2>ValDtls</h2><br>
+        AssVal: <input type="text" name="AssVal" /><br />
+        CgstVal: <input type="text" name="CgstVal" /><br />
+        SgstVal: <input type="text" name="SgstVal" /><br />
+        IgstVal: <input type="text" name="IgstVal" /><br />
+        CesVal: <input type="text" name="CesVall" /><br />
+        StCesVal: <input type="text" name="StCesVal" /><br />
+        Discount: <input type="text" name="Discount" /><br />
+        OthChrg: <input type="text" name="OthChrg" /><br />
+        RndOffAmt: <input type="text" name="RndOffAmt" /><br />
+        TotInvVal: <input type="text" name="TotInvVal" /><br />
+        TotInvValFc: <input type="text" name="TotInvValFc" /><br />
+        
+        <h2>
+            PayDtls{}<br>
+        </h2>
+        Nm: <input type="text" name="Nm_pd" /><br />
+        AccDet: <input type="text" name="AccDet" /><br />
+        Mode: <input type="text" name="Mode" /><br />
+        FinInsBr: <input type="text" name="FinInsBre" /><br />
+        PayTerm: <input type="text" name="PayTerm" /><br />
+        PayInstr: <input type="text" name="PayInstr" /><br />
+        CrTrn: <input type="text" name="CrTrn" /><br />
+        DirDr: <input type="text" name="DirDr" /><br />
+        CrDay: <input type="text" name="CrDay" /><br />
+        PaidAmt: <input type="text" name="PaidAmt" /><br />
+        PaymtDue: <input type="text" name="PaymtDue" /><br />
+        
+        <h2>
+            RefDtls{}<br>
+        </h2>
+        InvRm: <input type="text" name="InvRm" /><br />
+        
+        <h3>
+            "DocPerdDtls": <br>
+        </h3>
+        InvStDt: <input type="text" name="InvStDt" /><br />
+        InvEndDt: <input type="text" name="InvEndDt" /><br />
+        
+        <h3>
+            "DocPerdDtls": <br>
+        </h3>
+        InvNo: <input type="text" name="InvNo" /><br />
+        InvDt: <input type="text" name="InvDt" /><br />
+        OthRefNo: <input type="text" name="OthRefNo" /><br />
+        
+        <h3>
+            "ContrDtls":  <br>
+        </h3>
+        RecAdvRefr: <input type="text" name="RecAdvRefr" /><br />
+        RecAdvDt: <input type="text" name="RecAdvDt" /><br />
+        TendRefr: <input type="text" name="TendRefr" /><br />
+        ContrRefr: <input type="text" name="ContrRefr" /><br />
+        ExtRefr: <input type="text" name="ExtRefr" /><br />
+        ProjRefr: <input type="text" name="ProjRefr" /><br />
+        PORefr: <input type="text" name="PORefr" /><br />
+        PORefDt: <input type="text" name="PORefDt" /><br />
+        
+        
+        <h3>
+            "AddlDocDtls": [ <br>
+        </h3>
+        Url: <input type="text" name="Url" /><br />
+        Docs: <input type="text" name="Docs" /><br />
+        Info: <input type="text" name="Info" /><br />
+        
+        
+        <h3>
+            "ExpDtls": { <br>
+        </h3>
+            ShipBNo: <input type="text" name="ShipBNo" /><br />
+            ShipBDt: <input type="text" name="ShipBDt" /><br />
+            Port: <input type="text" name="Port" /><br />
+            RefClm: <input type="text" name="RefClm" /><br />
+            ForCur: <input type="text" name="ForCur" /><br />
+            CntCode: <input type="text" name="CntCode" /><br />
+            ExpDuty: <input type="text" name="ExpDuty" /><br />
+            
+            
+            <h3>
+                "EwbDtls": { <br>
+            </h3>
+                TransId: <input type="text" name="TransId" /><br />
+                TransName: <input type="text" name="TransName" /><br />
+                Distance: <input type="text" name="Distance" /><br />
+                TransDocNo: <input type="text" name="TransDocNo" /><br />
+                TransDocDt: <input type="text" name="TransDocDt" /><br />
+                VehNo: <input type="text" name="VehNo" /><br />
+                VehType: <input type="text" name="VehType" /><br />
+                TransMode: <input type="text" name="TransMode" /><br />
+    </form>
+</body>
+</html>

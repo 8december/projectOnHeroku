@@ -81,4 +81,5 @@ app.get('/long', (req, res) => {
 
               
 
-app.listen(1000);
+const PORT = process.env.PORT || 1000
+app.listen(PORT);

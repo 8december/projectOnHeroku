@@ -1,0 +1,29 @@
+<h1>gen IRN</h1>
+
+<div>
+    <form action="/gen_irn" type="POST">
+        TaxSch : <input type="text" name="TaxSch" /><br />
+        SupTyp: <input type="text" name="SupTyp" /><br />
+        RegRev: <input type="text" name="RegRev" /><br />
+        EcmGstin: <input type="text" name="EcmGstin" /><br />
+        IgstOnIntra: <input type="text" name="SupTyp" /><br />
+        
+        Typ: <input type="text" name="Typ" /><br />
+        No: <input type="text" name="No" /><br />
+        Dt: <input type="text" name="Dt" /><br />
+
+        
+    </form>
+</div>
+
+<div>
+  <p>AckNo : <%= data.AckNo %></p>
+  <p>AckDt : <%= data.AckDt %></p>
+  <p>Irn : <%= data.Irn %></p>
+  <p>SignedInvoice : <%= data.SignedInvoice %></p>
+  <p>Status : <%= data.Status %></p>
+  <p>EwbNo : <%= data.EwbNo %></p>
+  <p>EwbDt : <%= data.EwbDt %></p>
+  <p>EwbValidTill : <%= data.EwbValidTill %></p>
+  <p>Remarks : <%= data.Remarks %></p>
+</div>
