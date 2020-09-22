@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 
+        data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; 
+   script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    /> -->
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+some thing
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<script>
+
+
+var myHeaders = new Headers();
+myHeaders.append("client_id", "AACCK09TXP70H4Y");
+myHeaders.append("client_secret", "6L0Zzn42HhVvBPDdr8Xl");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Accept", "application/json, text/plain, */*");
+
+var raw = JSON.stringify({"data":{"UserName":"AACCK_6999B","Password":"RAIyaLQtb81Af6b8IEFWJJjBhSeZYJe1CwNlS2PBQi2zRAzl5/XTygHfPGs2BeHAso4BbA4B7f19S941iqjnHzWOkbNoJnRY9gWtiCoRazJV8vYNgM5ObuOb66Aq3nUpHxeZlfbu9v6N3+BXjx74vDQMdslRjjWlS6C018aviwBZgcjA+55qXhBPOnlf1/dZOPTgHbkO8rLg3fxTHKN0q3I2WPpjDFPZsHOO6c1N58uzlGm0X4H+sNstc4Tnn8axAVO15iYkZg+jS3PqDy9jwQAdOvNGyz9EqYGjo6zJ1Y5vV46MywwOEIJFrrdYo/Wiv6oGF1uW+2z0oWsERg6xPA==","AppKey":"hLrAS23RSw9Un+I+0kvfTsW75E1qCJBeOmebu/SExojHlGBvJOWMtMF9rCyP9Z+th++juP/Vua1V44onAoF+0dggm+S+nEubtvoUFZgzUEZ44ZewNGe2H6DAcODPWY24s7qFpF6le0Zhvf8/qZlBzpyuqtVmlRHDoofTxeNaKN4Iz46EKM8ARLFP0M0IWf/zRwU8pIkP7p6gPvEoJiE9BY3pctK9TjiDKCpig3tQ2il1eQ55ep28Mxlb8pffO1yz6jfP+Zbblhjt8wZB/mFhQ2z/7PReVJErptyjzA4Je3o5lTEfI+jU1NnCjXbYSxRxx0/CMeBNZT/E90STn8DAtQ==","ForceRefreshAccessToken":true}});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  credentials: "include",
+  body: raw,
+  redirect: 'follow',
+  mode: "no-cors",
+};
+
+fetch("https://einv-apisandbox.nic.in/eivital/v1.03/auth", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+  var data = {
+    data: {
+      UserName: "AACCK_6999B",
+      Password:
+        "RAIyaLQtb81Af6b8IEFWJJjBhSeZYJe1CwNlS2PBQi2zRAzl5/XTygHfPGs2BeHAso4BbA4B7f19S941iqjnHzWOkbNoJnRY9gWtiCoRazJV8vYNgM5ObuOb66Aq3nUpHxeZlfbu9v6N3+BXjx74vDQMdslRjjWlS6C018aviwBZgcjA+55qXhBPOnlf1/dZOPTgHbkO8rLg3fxTHKN0q3I2WPpjDFPZsHOO6c1N58uzlGm0X4H+sNstc4Tnn8axAVO15iYkZg+jS3PqDy9jwQAdOvNGyz9EqYGjo6zJ1Y5vV46MywwOEIJFrrdYo/Wiv6oGF1uW+2z0oWsERg6xPA==",
+      AppKey:
+        "hLrAS23RSw9Un+I+0kvfTsW75E1qCJBeOmebu/SExojHlGBvJOWMtMF9rCyP9Z+th++juP/Vua1V44onAoF+0dggm+S+nEubtvoUFZgzUEZ44ZewNGe2H6DAcODPWY24s7qFpF6le0Zhvf8/qZlBzpyuqtVmlRHDoofTxeNaKN4Iz46EKM8ARLFP0M0IWf/zRwU8pIkP7p6gPvEoJiE9BY3pctK9TjiDKCpig3tQ2il1eQ55ep28Mxlb8pffO1yz6jfP+Zbblhjt8wZB/mFhQ2z/7PReVJErptyjzA4Je3o5lTEfI+jU1NnCjXbYSxRxx0/CMeBNZT/E90STn8DAtQ==",
+      ForceRefreshAccessToken: true,
+    },
+  };
+
+  //   fetch("https://einv-apisandbox.nic.in/eivital/v1.03/auth", {
+  //     method: "POST",
+  //     headers: {
+  //       //   'Accept': 'application/json',
+  //       "Content-Type": "application/json",
+  //       client_id: "AACCK09TXP70H4Y",
+  //       client_secret: "6L0Zzn42HhVvBPDdr8Xl",
+  //       Accept: "*/*",
+  //       //   "Access-Control-Expose-Headers": "Content-Length",
+  //       //   'Access-Control-Allow-Origin': '*'
+  //       //   ,"Access-Control-Allow-Origin": "https://einv-apisandbox.nic.in",
+  //     },
+  //     // processData: false,
+  //     mode: "no-cors",
+  //     // contentType: "application/json",
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => {
+  //       console.log(res);
+  //       return res.json();
+  //     })
+  //     .then((res) => console.log(res))
+  //     .catch((error) => {
+  //       console.log(error + "   error this is");
+  //     });
+
+  // console.log(data);
+
+  fetch("https://einv-apisandbox.nic.in/eivital/v1.03/auth", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      client_id: "AACCK09TXP70H4Y",
+      client_secret: "6L0Zzn42HhVvBPDdr8Xl",
+      Accept: "*/*",
+      "Cache-Control": "Cache-Control"
+    },
+    credentials: "include",
+    body: JSON.stringify(data),
+    mode: "no-cors",
+  }).then((data) => {
+    console.log(data);
+  });
+
+  // const axios = require('axios');
+
+  // axios.get('http://webcode.me').then(resp => {
+
+  //     console.log(resp.data);
+  // });
+</script>
+<!-- <script src="./x.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
